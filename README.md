@@ -32,7 +32,7 @@ helper.plot_side_by_side([input_images_rgb, target_masks_rgb])
 ```
 
 ## Left: Input image, Right: Target mask
-![png](output_0_1.png)
+![png](https://raw.githubusercontent.com/usuyama/pytorch-unet/master/images/output_0_1.png)
 
 
 ## Prepare Dataset and DataLoader
@@ -102,7 +102,7 @@ plt.imshow(reverse_transform(inputs[3]))
     torch.Size([25, 3, 192, 192]) torch.Size([25, 6, 192, 192])
 
 
-![png](output_2_2.png)
+![png](https://raw.githubusercontent.com/usuyama/pytorch-unet/master/images/output_2_2.png)
 
 
 
@@ -964,5 +964,5 @@ helper.plot_side_by_side([input_images_rgb, target_masks_rgb, pred_rgb])
 
 ### Left: Input image, Middle: Correct mask (Ground-truth), Rigth: Predicted mask
 
-![png](output_9_1.png)
+![png](https://raw.githubusercontent.com/usuyama/pytorch-unet/master/images/output_9_1.png)
 
