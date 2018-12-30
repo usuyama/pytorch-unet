@@ -6,7 +6,7 @@ This repository contains simple PyTorch implementations of U-Net and FCN, which 
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 - [Fully Convolutional Networks for Semantic Segmentation](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf)
 
-# Check some images/masks from simulation
+# Synthetic images/masks for training
 
 ```python
 import matplotlib.pyplot as plt
@@ -27,11 +27,11 @@ input_images_rgb = [x.astype(np.uint8) for x in input_images]
 # Map each channel (i.e. class) to each color
 target_masks_rgb = [helper.masks_to_colorimg(x) for x in target_masks]
 
-# Left: Input image, Right: Target mask
+# Left: Input image (black and white), Right: Target mask (6ch)
 helper.plot_side_by_side([input_images_rgb, target_masks_rgb])
 ```
 
-## Left: Input image, Right: Target mask
+## Left: Input image (black and white), Right: Target mask (6ch)
 ![png](https://raw.githubusercontent.com/usuyama/pytorch-unet/master/images/output_0_1.png)
 
 
